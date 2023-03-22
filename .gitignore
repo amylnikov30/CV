@@ -1,0 +1,8 @@
+# Output/binary files
+/bin/
+
+# DOCX files
+*.docx
+
+# Packages
+*.zip
