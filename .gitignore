@@ -1,5 +1,6 @@
 # Output/binary files
-/bin/
+/src/out/
+/src/bin/
 
 # DOCX files
 *.docx

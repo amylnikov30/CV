@@ -13,7 +13,9 @@
 
 \documentclass{resume} % Use the custom resume.cls style
 
-\usepackage{hyperref}
+% \usepackage{hyperref}
+\usepackage{simplecv}
+
 \hypersetup{
     colorlinks=true,
     linkcolor=blue,
@@ -23,108 +25,126 @@
 
 
 \usepackage[left=0.75in,top=0.6in,right=0.75in,bottom=0.6in]{geometry} % Document margins
-\newcommand{\tab}[1]{\hspace{.2667\textwidth}\rlap{#1}}
-\newcommand{\itab}[1]{\hspace{0em}\rlap{#1}}
+% \newcommand{\tab}[1]{\hspace{.2667\textwidth}\rlap{#1}}
+% \newcommand{\itab}[1]{\hspace{0em}\rlap{#1}}
 \name{Alexander Mylnikov} % Your name
 %\address{123 Pleasant Lane \\ City, State 12345} 
-\address{646-647-4762 \\ \href{mailto:amylnikov30@gmail.com}{amylnikov30@gmail.com}} % Your phone number and email
+\address{+1-646-647-4762 \\ +44-7778-725-491 \\ \href{mailto:amylnikov30@gmail.com}{amylnikov30@gmail.com}} % Your phone number and email
 
 \begin{document}
 
-%----------------------------------------------------------------------------------
-%	WORK EXPERIENCE
-%----------------------------------------------------------------------------------
-\large
+\import{sections/}{education.tex}
+\import{sections/}{projects.tex}
+\import{sections/}{experience.tex}
+\import{sections/}{skills.tex}
 
-\begin{rSection}{\LARGE Education}
-{\bf High School Diploma} \hfill {\em June 2022 (expected)} 
-\\ Newton South High School \hfill \textit{Newton, MA}
+% %----------------------------------------------------------------------------------
+% %	WORK EXPERIENCE
+% %----------------------------------------------------------------------------------
+% \large
 
-{\bf Extra-Curricular Advanced Mathematics} \hfill {\em 2016 - present} 
-\\ Russian School of Mathematics \hfill \textit{Newton, MA}
-
-
-\end{rSection}
-
-
-\begin{rSection}{\LARGE Experience}
-
-\begin{rSubsection}{\LARGE Engineering}{2016 - present}
-{\tiny }{\tiny }
+% \begin{rSection}{\LARGE Education}
+% {\bf BSc in Computer Science} \hfill {\em June 2026 (expected)} 
+% \\ University of St-Andrews \hfill \textit{St-Andrews, Scotland}
 
 
+% {\bf High School Diploma} \hfill {\em June 2022} 
+% \\ Newton South High School \hfill \textit{Newton, MA, USA}
+
+% {\bf Extra-Curricular Advanced Mathematics} \hfill {\em 2016 - 2022} 
+% \\ Russian School of Mathematics \hfill \textit{Newton, MA, USA}
 
 
-\item[$-$] Designed a user-friendly \href{https://github.com/amylnikov30/AdvancedTrigCalc}{Trigonometric Calculator} in Python and \href{https://github.com/amylnikov30/TrigCalcv2.x}{refactored} in C\#
+% \end{rSection}
 
 
-\item[$-$] Led four teams that built the following applications \& firmware: 
-\begin{itemize}
-    \item[$\circ$] \href{https://github.com/amylnikov30/GameWithMultiplayer}{Hotline Shadow}
-    \item[$\circ$] \href{https://github.com/NSHSProgrammingClub/cargameserver}{Online First Person}
-    \item[$\circ$] SAP Virtual Machine
-    \item[$\circ$] \href{https://github.com/amylnikov30/BluetoothCarController}{Bluetooth Car Controller}
-\end{itemize}
+% \begin{rSection}{\LARGE Experience}
+
+%     \begin{rSubsection}{\LARGE Projects}
+%         {\tiny}{\tiny}
+        
+%         \item[$-$] Designed a user-friendly \href{https://github.com/amylnikov30/AdvancedTrigCalc}{Trigonometric Calculator} in Python and \href{https://github.com/amylnikov30/TrigCalcv2.x}{refactored} in C\#
+        
+        
+%         \item[$-$] Led teams teams that built the following applications \& firmware: 
+%         \begin{itemize}
+%         %     \item[$\circ$] \href{https://github.com/amylnikov30/GameWithMultiplayer}{Hotline Shadow}
+%         %     \item[$\circ$] \href{https://github.com/NSHSProgrammingClub/cargameserver}{Online First Person}
+%             \item[$\circ$] \href{https://github.com/James7304/the-wall-street-crashers}{The Wall Street Crasher} - A public hedgefund driven by an ML algorithm (STACSHACK 2023 Project).
+%             \item[$\circ$] \href{https://github.com/BerkUnver/SAP-Virtual-Machine}{SAP Virtual Machine} - Virtual Machine for SAP assembly language which runs a Turing virtual machine (High School CS Project).
+%             \item[$\circ$] \href{https://github.com/amylnikov30/BluetoothCarController}{Bluetooth Car Controller} - Firmware to process directional input via Bluetooth on a remotely-controlled car (High School Engineering Project).
+%             \item[$\circ$] \href{https://github.com/Sequal32/nshsschedule-website}{NSHS Schedule Website} - Website to organise students' schedules for Newton South High School (taken offline).
+%             \item[$\circ$] \href{https://github.com/James7304/game-of-life}{Conway's Game of Life} - A Game of Life implementation with an extensive GUI (University Project).
+%         \end{itemize}
+        
+        
+%         \item[$-$]  See other projects at {\href{https://github.com/amylnikov30}{GitHub Profile}}
+    
+%     \end{rSubsection}
+
+%     \begin{rSubsection}{\LARGE Work}
+%         {\tiny}{\tiny}
+        
+%         \item[$-$] Jobs:
+%         \begin{itemize}
+%             \item[$\circ$] First job
+%             \item[$\circ$] Second job
+%             \item[$\circ$] First job
+%             \item[$\circ$] First job
+%         \end{itemize}
+%     \end{rSubsection}
 
 
-\item[$-$]  See other projects at {\href{https://github.com/amylnikov30}{GitHub Profile}}
+% % \begin{rSubsection}{\LARGE Sports}{2014 -- present}
+% % {}{}
+
+% % \item[$-$] Competitive Swimming (Crimson Aquatics Swimming Club)
+% % \item[$-$] Competitive Football (Fort Lee Soccer Club, Teaneck Stingrays Soccer Club)
+
+
+% % \end{rSubsection}
+
+
+% % \begin{rSubsection}{\LARGE Arts}{2011 -- present}
+% % {}{}
+
+% % \item[$-$] Classical Piano 
+% % \item[$-$] Violin 
+% % \item[$-$] Trumpet
+
+% % \end{rSubsection}
+
+% % \begin{rSubsection}{\LARGE Volunteering}{2015 - 2016}
+% % {\Large \phantom{a}}{Edgewater, NJ}
+
+% % \item[$-$] Advised and guided users
+% % \item[$-$] Helped sort clothes for charity
+
+% % \end{rSubsection}
+
+
+% \end{rSection}
 
 
 
-
-\end{rSubsection}
-
-
-\begin{rSubsection}{\LARGE Sports}{2014 -- present}
-{}{}
-
-\item[$-$] Competitive Swimming (Crimson Aquatics Swimming Club)
-\item[$-$] Competitive Football (Fort Lee Soccer Club, Teaneck Stingrays Soccer Club)
+% %----------------------------------------------------------------------------------------
+% %	EDUCATION
+% %----------------------------------------------------------------------------------------
 
 
-\end{rSubsection}
+% %----------------------------------------------------------------------------------------
+% %	SKILLS
+% %----------------------------------------------------------------------------------------
 
+% \begin{rSection}{\LARGE Proficiencies}
 
-\begin{rSubsection}{\LARGE Arts}{2011 -- present}
-{}{}
+%     \begin{tabular}{ @{} >{\bfseries}r @{\hspace{2ex}} l }
+%         Operating Systems& \ Windows, UNIX-based  \\
+%         Computer Languages& \ Python, Swift, C\#, Java, Arduino\slash  C\slash C++, JS, HTML, CSS \\
+%         Languages & \ Russian (fluent), Spanish (fluent), French (semi-fluent) \\
+%     \end{tabular}
 
-\item[$-$] Classical Piano 
-\item[$-$] Violin 
-\item[$-$] Trumpet
-
-\end{rSubsection}
-
-\begin{rSubsection}{\LARGE Volunteering}{2015 - 2016}
-{\Large \phantom{a}}{Edgewater, NJ}
-
-\item[$-$] Advised and guided users
-\item[$-$] Helped sort clothes for charity
-
-\end{rSubsection}
-
-
-\end{rSection}
-
-
-
-%----------------------------------------------------------------------------------------
-%	EDUCATION
-%----------------------------------------------------------------------------------------
-
-
-%----------------------------------------------------------------------------------------
-%	SKILLS
-%----------------------------------------------------------------------------------------
-
-\begin{rSection}{\LARGE Skills}
-
-\begin{tabular}{ @{} >{\bfseries}r @{\hspace{6ex}} l }
-Operating Systems& \ Windows, Linux  \\
-Computer Languages& \ Python, Swift, C\#, Java, Arduino\slash  C\slash C++ \\
-Languages & \ Russian, Spanish, French (basic) \\
-\end{tabular}
-
-\end{rSection}
+% \end{rSection}
 
 
 \end{document}
